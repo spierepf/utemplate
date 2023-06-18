@@ -12,4 +12,9 @@ setup(name='utemplate',
       author_email='pfalcon@users.sourceforge.net',
       license='MIT',
       cmdclass={'sdist': sdist_upip.sdist},
-      packages=['utemplate'])
+      packages=['utemplate'],
+      entry_points = {
+            'console_scripts': [
+                  'utemplate_util = utemplate.utemplate_util:main'
+            ]
+      })
